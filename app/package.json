@@ -1,12 +1,12 @@
 {
   "name": "rocketchat",
-  "productName": "Rocket.Chat+",
-  "identifier": "chat.rocket",
-  "description": "Rocket.Chat Native Cross-Platform Desktop Application via Electron.",
+  "productName": "Ubegin.Chat",
+  "identifier": "chat.ubegin.com",
+  "description": "Chat Desktop Application for ubegin.com via Electron.",
   "version": "1.3.3",
   "build": "15",
-  "author": "Rocket.Chat Support <support@rocket.chat>",
-  "copyright": "© 2016, Rocket.Chat",
+  "author": "how.ubegin.com",
+  "copyright": "© 2016, ubegin.com",
   "main": "background.js",
   "dependencies": {
     "@paulcbetts/system-idle-time": "^1.0.4",

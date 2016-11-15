@@ -17,7 +17,7 @@ sidebar.on('badge-setted', function() {
 });
 
 export var start = function() {
-    var defaultInstance = 'https://demo.rocket.chat';
+    var defaultInstance = 'https://chat.ubegin.com';
 
     // connection check
     function online() {
@@ -140,6 +140,7 @@ export var start = function() {
             input.value = '';
         }, function() {});
     };
+  submit();
 
     hostField.addEventListener('keydown', function(ev) {
         if (ev.which === 13) {

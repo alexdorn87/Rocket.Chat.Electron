@@ -182,71 +182,6 @@ if (process.platform === 'darwin') {
 					]
 				}
 			]
-		},
-		{
-			label: 'Window',
-			id: 'window',
-			role: 'window',
-			submenu: [
-				{
-					label: 'Minimize',
-					accelerator: 'Command+M',
-					role: 'minimize'
-				},
-				{
-					label: 'Close',
-					accelerator: 'Command+W',
-					role: 'close'
-				},
-				{
-					type: 'separator'
-				},
-				{
-					type: 'separator',
-					id: 'server-list-separator',
-					visible: false
-				},
-				{
-					label: 'Add new server',
-					accelerator: 'Command+N',
-					click: function() {
-						var mainWindow = remote.getCurrentWindow();
-						mainWindow.show();
-						servers.clearActive();
-					}
-				},
-				{
-					type: 'separator'
-				},
-				{
-					label: 'Bring All to Front',
-					click: function() {
-						var mainWindow = remote.getCurrentWindow();
-						mainWindow.show();
-					}
-				}
-			]
-		},
-		{
-			label: 'Help',
-			role: 'help',
-			submenu: [
-				{
-					label: APP_NAME + ' Help',
-					click: function() {
-						remote.shell.openExternal('https://rocket.chat/docs');
-					}
-				},
-				{
-					type: 'separator'
-				},
-				{
-					label: 'Learn More',
-					click: function() {
-						remote.shell.openExternal('https://rocket.chat');
-					}
-				}
-			]
 		}
 	];
 } else {
@@ -439,3 +374,4 @@ export var menuTemplate = template;
 export var menu = Menu.buildFromTemplate(template);
 
 Menu.setApplicationMenu(menu);
+sidebar.hide();
